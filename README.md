@@ -13,4 +13,4 @@ https://www.netoptik.ru/yandexmarket.yml
 
 Задачи
 ----------------------------------
-![image](https://github.com/Mikhail-068/NetOptic/assets/82748554/e7952682-f72e-45c6-b295-30dfd1f61ed6)
+![image](https://github.com/Mikhail-068/NetOptic/assets/82748554/2d467053-4388-4253-8f4d-14dc1024c678)
