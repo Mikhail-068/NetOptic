@@ -1,0 +1,50 @@
+import xml.etree.ElementTree as ETree
+import pandas as pd
+  
+
+xmldata = "yandexmarket.yml"
+prstree = ETree.parse(xmldata)
+root = prstree.getroot()
+
+a = list(root.iter('offer'))
+d_pic = []
+d_mat = []
+for n in range(len(a)):
+    lst = []
+    for i in a[n].findall('picture'):
+        lst.append(i.text)
+    d_pic.append(lst)
+    for i in a[n]:
+        for k, v in i.attrib.items():
+            if v == 'Материал ':
+                d_mat.append(i.text.lower().replace(" ", "")) # сразу переводим в нижний регистр и убираем все пробелы
+#     if n == 10:
+#         break
+    
+
+df = pd.DataFrame(list(zip(d_mat, d_pic)), columns =['Материал', 'Изображение'])
+
+
+# Находим уникальные материалы и их количество
+for i in df['Материал'].unique():
+    name = df.index[df['Материал'] == i].tolist()
+    print(str(i), name)
+print(df['Материал'].unique())
+
+# Причесываем
+df['Материал'] = df['Материал'].str.replace('комбинированные', 'комбинированный')
+df['Материал'] = df['Материал'].str.replace('пластик,ударопрочный', 'пластик')
+df = df.drop(df[df['Материал'] == 'стекло'].index, axis = 0)
+
+# Повторно проверяем уникальность
+print(df['Материал'].unique())
+
+for i in df['Материал'].unique():
+    name = df.index[df['Материал'] == i].tolist()
+    cell_sum = df.loc[df['Материал'] == str(i), 'Изображение'].sum()
+    df.at[name[0],'Изображение'] = cell_sum # Складываем все ссылки на материал в первую ячеку с названием материала
+    df = df.drop (index=name[1:]) # Улаляем все остальные ячейки с названием материала
+
+df.insert (loc=1 , column='К', value=[len(i)for i in df['Изображение']]) # Добавим колонку с количеством изображений
+
+print(df)
