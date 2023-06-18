@@ -1,0 +1,100 @@
+import xml.etree.ElementTree as ETree
+import pandas as pd
+import os
+import requests
+from datetime import datetime
+
+
+# Скачиваем базу с очками и сохраняем
+# url = 'https://www.netoptik.ru/yandexmarket.yml'
+# p = requests.get(url)
+# file = url.split('/')[-1]
+# file_path = os.path.join(r'C:\Users\Lenovo\Desktop\thonny-4.0.2-windows-portable\user_data\Glasses', file)
+# with open(file_path, 'wb') as f:
+#     f.write(p.content)
+  
+
+xmldata = "yandexmarket.yml"
+prstree = ETree.parse(xmldata)
+root = prstree.getroot()
+
+a = list(root.iter('offer'))
+d_pic = []
+d_mat = []
+for n in range(len(a)):
+    lst = []
+    for i in a[n].findall('picture'):
+        lst.append(i.text)
+    d_pic.append(lst)
+    for i in a[n]:
+        for k, v in i.attrib.items():
+            if v == 'Материал ':
+                d_mat.append(i.text.lower().replace(" ", "")) # сразу переводим в нижний регистр и убираем все пробелы
+    
+
+df = pd.DataFrame(list(zip(d_mat, d_pic)), columns =['Материал', 'Изображение'])
+
+# Находим уникальные материалы и их количество
+# for i in df['Материал'].unique():
+#     name = df.index[df['Материал'] == i].tolist()
+#     print(str(i), len(name))
+
+
+# Причесываем
+df['Материал'] = df['Материал'].str.replace('комбинированные', 'комбинированный')
+df['Материал'] = df['Материал'].str.replace('пластик,ударопрочный', 'пластик')
+# Удаляем строки с ненужными материалами
+# Оставляем в таблице 'комбинированный' 'металл' 'пластик'
+for i in ['силикон', 'трайвекс', 'титан', 'поликарбонат', 'стекло', 'silflex']:  
+    df = df.drop(df[df['Материал'] == i].index, axis = 0)
+
+
+# Оставляем в таблице название одно материала(при первом его упоминании в столбце "Материал"
+# и все ссылки на изображение в одной строке
+# Остальные строки, откуда взяты ссылки на изхображения - удаляем
+for i in df['Материал'].unique():
+    name = df.index[df['Материал'] == i].tolist()
+    cell_sum = df.loc[df['Материал'] == str(i), 'Изображение'].sum()
+    df.at[name[0],'Изображение'] = list(set(cell_sum)) # Складываем все ссылки (списки) на материал в первую ячейку с названием материала
+    # После объединения, убираем дубликаты изображений в этой ячейке через set
+    df = df.drop (index=name[1:]) # Удаляем все остальные ячейки с названием этого материала 
+
+
+df.insert (loc=1 , column='quantity', value=[len(i)for i in df['Изображение']]) # Добавим колонку с количеством изображений
+df.reset_index(drop = True, inplace = True) # Сброс индексов строк
+# Сохраняем базу в csv
+# df.to_csv (r'C:\Users\Lenovo\Desktop\thonny-4.0.2-windows-portable\user_data\Glasses\bs_my\my_data_4.csv', index=True)
+
+# Создаем каталоги для изображений
+for i in df['Материал']:
+    dir_path = os.path.join(r'C:\Users\Lenovo\Desktop\thonny-4.0.2-windows-portable\user_data\Glasses\bs_my\image', i)
+    if not os.path.isdir(dir_path):
+         os.mkdir(dir_path)
+# И скачиваем в эти каталоги изображения очков
+    startTime = datetime.now()
+    n = 0
+    index = df.index[df['Материал'] == i].tolist()[0]
+    print(index, i)
+
+    for url in df.at[index, 'Изображение']:
+        if url is None:
+            continue
+        else:
+            p = requests.get(url)
+            if p.status_code == 200:
+                file = url.split('/')[-1]
+                file_path = os.path.join(dir_path, file)
+                if file in dir_path:
+                    continue
+                else:
+                    with open(file_path, 'wb') as f:
+                        f.write(p.content)
+                    n += 1
+                    print(n, url)
+            else:
+                continue 
+         
+    print(f'Время загрузки {i} - ', datetime.now() - startTime)
+    
+    
+print(df)
