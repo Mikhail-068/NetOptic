@@ -16,4 +16,6 @@ https://www.netoptik.ru/yandexmarket.yml
 Ободки: https://cloud.mail.ru/stock/ikaeNDRgeryusSJ8PoHLUWqw \
 Втулки: https://cloud.mail.ru/stock/559g9AVrFej3mcxtJh7db5az \
 
-
+Задачи (https://docs.google.com/spreadsheets/d/1Ji_EEA2baYM4twhGF07cMqD-f6E0GCEDUMEXLOKfATA/edit#gid=1189499090)
+---------------
+![image](https://github.com/Mikhail-068/NetOptic/assets/82748554/4141a430-21c6-49ca-969b-0bd57b925cd3)
