@@ -1,8 +1,9 @@
 # NetOptic (старички)
 --------------------------------
 
-1. Таблица с посещаемостью и задачами недели 
-https://docs.google.com/spreadsheets/d/1Ji_EEA2baYM4twhGF07cMqD-f6E0GCEDUMEXLOKfATA/edit?usp=sharing
+1. Таблица с ноутбуками команды.
+https://colab.research.google.com/drive/1gfE7TcAqycNuVppAykfzR0LmC8hiS5O-#scrollTo=1qsDBOJyd_S6
+![image](https://github.com/Mikhail-068/NetOptic/assets/82748554/e57ae08f-5f7c-46ae-a6f9-d200c14aa3ef)
 
 
 2. Каждый создает под себя папку, в которую будет загружать свой код !!
