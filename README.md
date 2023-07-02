@@ -2,7 +2,7 @@
 --------------------------------
 
 1. Таблица с ноутбуками команды.
-https://colab.research.google.com/drive/1gfE7TcAqycNuVppAykfzR0LmC8hiS5O-#scrollTo=1qsDBOJyd_S6
+[https://colab.research.google.com/drive/1gfE7TcAqycNuVppAykfzR0LmC8hiS5O-#scrollTo=1qsDBOJyd_S6](https://docs.google.com/spreadsheets/d/1EpXqCcML3TZHb-bqbNwiTmFkopigteOuPTsBaHgH7Qs/edit?usp=sharing)
 ![image](https://github.com/Mikhail-068/NetOptic/assets/82748554/e57ae08f-5f7c-46ae-a6f9-d200c14aa3ef)
 
 
