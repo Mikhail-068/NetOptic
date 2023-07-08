@@ -9,3 +9,7 @@
 ## Неделя 2
 
 Распознавание номенклатуры с фото очков https://colab.research.google.com/drive/1Um24xHHtrU9DqmA7LoZhoxEgbnvsucdc?usp=sharing
+
+## Неделя 4
+
+Распознавание с обрезанных фото с поиском лучшего совпадения из таблицы https://colab.research.google.com/drive/1yY7RRmBJUbW7WLvqU-5Q7LzcO1Z9YP4U?usp=sharing
