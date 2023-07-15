@@ -13,3 +13,7 @@
 ## Неделя 4
 
 Распознавание с обрезанных фото с поиском лучшего совпадения из таблицы https://colab.research.google.com/drive/1yY7RRmBJUbW7WLvqU-5Q7LzcO1Z9YP4U?usp=sharing
+
+## Неделя 5
+
+Распознавание с 1 фото https://colab.research.google.com/drive/1_YU7QN7AicMdDZ2E8AEnvf--4E7CPciT?usp=drive_link
