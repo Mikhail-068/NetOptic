@@ -17,3 +17,7 @@
 ## Неделя 5
 
 Распознавание с 1 фото https://colab.research.google.com/drive/1_YU7QN7AicMdDZ2E8AEnvf--4E7CPciT?usp=drive_link
+
+## Неделя 7
+
+Вывод модели и параметров очков https://colab.research.google.com/drive/1_YU7QN7AicMdDZ2E8AEnvf--4E7CPciT?usp=drive_link
