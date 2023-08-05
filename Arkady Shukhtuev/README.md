@@ -21,3 +21,12 @@
 ## Неделя 7
 
 Вывод модели и параметров очков https://colab.research.google.com/drive/1_YU7QN7AicMdDZ2E8AEnvf--4E7CPciT?usp=drive_link
+
+## Неделя 8
+
+Обученная модель https://drive.google.com/drive/folders/1bYFEOGS3mfJS5SoExwcFogQmVKunbdR6?usp=sharing
+Распознавание с YOLO ч/б https://colab.research.google.com/drive/1sPNzjrCI45DY_7S0rCmkoKRPfDQddMpg?usp=sharing
+
+## Неделя 9
+
+Распознавание с YOLO на цветных изображениях + расширенные bboxes https://colab.research.google.com/drive/16jgGbxdrRvTxWr3yrP-CGjoYWDVfc0xc?usp=sharing
