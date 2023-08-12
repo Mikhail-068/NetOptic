@@ -27,6 +27,6 @@
 Обученная модель https://drive.google.com/drive/folders/1bYFEOGS3mfJS5SoExwcFogQmVKunbdR6?usp=sharing  
 Распознавание с YOLO ч/б https://colab.research.google.com/drive/1sPNzjrCI45DY_7S0rCmkoKRPfDQddMpg?usp=sharing
 
-## Неделя 9
+## Неделя 10
 
 Распознавание с YOLO на цветных изображениях + расширенные bboxes https://colab.research.google.com/drive/16jgGbxdrRvTxWr3yrP-CGjoYWDVfc0xc?usp=sharing
