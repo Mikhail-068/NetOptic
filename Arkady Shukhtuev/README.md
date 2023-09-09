@@ -30,3 +30,4 @@
 ## Неделя 10
 
 Распознавание с YOLO на цветных изображениях + расширенные bboxes https://colab.research.google.com/drive/16jgGbxdrRvTxWr3yrP-CGjoYWDVfc0xc?usp=sharing
+Модель YOLO распознавания текста https://drive.google.com/drive/folders/1bYFEOGS3mfJS5SoExwcFogQmVKunbdR6?usp=sharing
