@@ -23,7 +23,7 @@ https://www.netoptik.ru/yandexmarket.yml
 
 # ИТОГОВЫЕ РЕЗУЛЬТАТЫ СТАЖИРОВКИ :
 БОТ 1 - Определение материалла оправы и распознавание артикула с дужки оправы очков
-https://drive.google.com/file/d/1JNV9gQaE8Ea4UVhXZh3sfqMDtgvl4wMa/view?usp=sharing
+https://drive.google.com/file/d/1jLlLbvxPj7vcbeLP_ypp2WqzZI0_ki0S/view?usp=sharing
 
 БОТ 2 - Виртуальная примерочная: наложение на изображение лица человека изображения оправы очков
 https://drive.google.com/file/d/1nHNzSR8HAlvK6YiZYPGavVbMn7FmhE-L/view?usp=sharing
