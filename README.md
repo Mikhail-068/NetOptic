@@ -22,10 +22,9 @@ https://www.netoptik.ru/yandexmarket.yml
 ![image](https://github.com/Mikhail-068/NetOptic/assets/82748554/3085b746-cff6-431c-8b3a-a8e17b251e41)
 
 # ИТОГОВЫЕ РЕЗУЛЬТАТЫ СТАЖИРОВКИ :
-БОТ 1 - Определение материала оправы и распознавание артикула с дужки оправы очков
-https://drive.google.com/file/d/1jLlLbvxPj7vcbeLP_ypp2WqzZI0_ki0S/view?usp=sharing
+[БОТ 1 - Определение материала оправы и распознавание артикула с дужки оправы очков](https://drive.google.com/drive/folders/1teBlmqQ_75PcCjjiHTkHUxR7l8MVnLzV?usp=sharing)
 
-БОТ 2 - Виртуальная примерочная: наложение на изображение лица человека изображения оправы очков
-https://drive.google.com/file/d/1nHNzSR8HAlvK6YiZYPGavVbMn7FmhE-L/view?usp=sharing
+[БОТ 2 - Виртуальная примерочная: наложение на изображение лица человека изображения оправы очков](https://drive.google.com/drive/folders/1v4ipZL9SGS9Bhwdz9-4dhDUlWK8qtWxx?usp=sharing)
+
 
 
