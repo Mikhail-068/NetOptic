@@ -8,7 +8,7 @@
 
 [БОТ 1 - Определение материала оправы и распознавание артикула с дужки оправы очков - папка с файлами](https://drive.google.com/drive/folders/1teBlmqQ_75PcCjjiHTkHUxR7l8MVnLzV?usp=sharing)
 
-[Видео работы бота](https://drive.google.com/drive/folders/1teBlmqQ_75PcCjjiHTkHUxR7l8MVnLzV?usp=sharing)
+[Видео работы бота](https://drive.google.com/file/d/1ZVY6l5CVX2WbdkMQ9n2P7fnFJPaa1xU7/view?usp=sharing)
 
 [Докер Бот 1](https://drive.google.com/file/d/1GRZtsqmamuCdV25aA8HbMuOVsWnRQygX/view?usp=sharing)
 
